@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Explore Jo Smith’s responsive photography portfolio, featuring professional images and creative work designed to showcase her skills and attract clients.">
+    <title>Jo Smith Photography | Wedding | Family | Nature</title>
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap" rel="stylesheet">
+
+    <!-- Links -->
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <link rel="stylesheet" href="/css/root.css">
+    <link rel="stylesheet" href="/css/header.css">
+    <link rel="stylesheet" href="/css/footer.css">
+    <link rel="stylesheet" href="/css/index.css">
+    
+    <!-- Tailwind -->
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+
+</head>
+<body>
+    <!-- Background -->
+    <div class="background">
+        <img loading="lazy" src="/assets/index-assets/contour-beige.svg" alt="Background" class="background-img" draggable="false">
+    </div>
+    
+
+    <!-- Shutters -->
+    <div id="shutter-container">
+        <div class="shutter-blade" id="shutter-top"></div>
+        <div class="shutter-blade" id="shutter-bottom"></div>
+    </div>
+
+    <!-- Header -->
+    <header data-aos="fade-down" data-aos-duration="1500" data-aos-delay="1000">
+        <a href="/index.html" class="logo">
+            <img loading="lazy" src="/assets/header-assets/logo.png" alt="Jo Smith Photography" class="logo">
+        </a>
+        <nav class="nav-desktop">
+            <a href="/index.html" class="nav-item">Home</a>
+            <a href="/pages/work.html" class="nav-item">My Work</a>
+            <a href="/pages/packages.html" class="nav-item">My Packages</a>
+            <a href="/pages/testimonials.html" class="nav-item">Testimonials</a>
+            <a href="/pages/contact.html" class="nav-item">Contact Me</a>
+        </nav>
+        <button class="hamburger-menu-btn">
+            <img src="assets/header-assets/hamburger.svg" alt="Menu Button">
+        </button>
+    </header>
+
+    <!-- Hamburger Menu -->
+    <section class="hamburger-menu">
+        <div class="close-btn">
+            <img src="/assets/header-assets/close.svg" alt="Exit Menu">
+        </div>
+        <a href="/index.html" class="logo">
+            <img loading="lazy" src="/assets/header-assets/logo.png" alt="Jo Smith Photography" class="logo logo-menu">
+        </a>
+        <nav class="nav-mobile">
+            <a href="/index.html" class="nav-item">
+                <img loading="lazy" src="" alt="" class="nav-item-icon">
+                Home
+            </a>
+            <a href="/pages/work.html" class="nav-item">
+                <img loading="lazy" src="" alt="" class="nav-item-icon">
+                My Work
+            </a>
+            <a href="/pages/packages.html" class="nav-item">
+                <img loading="lazy" src="" alt="" class="nav-item-icon">    
+                My Packages
+            </a>
+            <a href="/pages/testimonials.html" class="nav-item">
+                <img loading="lazy" src="" alt="" class="nav-item-icon">
+                Testimonials
+            </a>
+            <a href="/pages/contact.html" class="nav-item">
+                <img loading="lazy" src="" alt="" class="nav-item-icon">    
+                Contact Me
+            </a>
+        </nav>
+
+        <div class="nav-other">
+            <a href="/pages/packages.html#wedding-packages-title">
+                <img loading="lazy" src="/assets/header-assets/hamburger-weddings.png" alt="Weddings" class="nav-other-img">
+            </a>
+
+            <a href="/pages/packages.html#branding-packages-title">
+                <img loading="lazy" src="/assets/header-assets/hamburger-nature.png" alt="Nature" class="nav-other-img">
+            </a>
+
+            <a href="/pages/packages.html#family-packages-title">
+                <img loading="lazy" src="/assets/header-assets/hamburger-families.png" alt="Families" class="nav-other-img">
+            </a>
+        </div>
+
+        <div class="hamburger-socials">
+            <a href="www.instagram.com" class="hamburger-social">
+                <img src="/assets/header-assets/instagram.svg" alt="Instagram">
+            </a>
+            <a href="www.x.com" class="hamburger-social">
+                <img src="/assets/header-assets/twitter.svg" alt="X">
+            </a>
+        </div>
+    </section>
+
+    <!-- Main -->
+    <main>
+        <section class="hero">
+            <img loading="lazy" src="assets/index-assets/background2.png" alt="Background" class="hero-bg" draggable="false">
+
+            <div class="hero-info">
+                <h1 class="hero-title">
+                    <span class="hero-story" data-aos="fade-right" data-aos-duration="1500" data-aos-delay="1000">Your Story.</span>
+                    <span class="nat-beut">
+                        <span class="hero-naturally" data-aos="fade-right" data-aos-delay="1200" data-aos-duration="1500">Naturally</span>
+                        <span class="hero-beautiful" data-aos="fade-right" data-aos-delay="1300" data-aos-duration="1500">Beautiful.</span>
+                    </span>
+                </h1>
+
+                <img loading="lazy" src="assets/index-assets/green-brush.png" alt="Divider" class="green-brush" data-aos="fade-right" data-aos-delay="1400" data-aos-duration="1500">
+
+                <p class="hero-para" data-aos="fade-right" data-aos-delay="1400" data-aos-duration="1500">
+                    Photography for the moments that matter the most.<br>
+                    In nature, in love, and in life.
+                </p>
+
+                <div class="hero-btn" data-aos="fade-right" data-aos-delay="1400" data-aos-duration="1500">
+                    <a href="/pages/work.html">Explore the Gallery</a>
+                    <a href="/pages/work.html"><img loading="lazy" src="assets/index-assets/right-arrow-in-black-circular-button.svg" alt="Explore Gallery"></a>
+                </div>
+            </div>
+
+            <a href="/pages/packages.html#wedding-packages-title" class="icon-btn wedding-icon-btn" data-aos="zoom-in" data-aos-delay="1400" data-aos-duration="1000">
+                <div class="icon-img-container">
+                    <img loading="lazy" src="assets/index-assets/wedding-rings.svg" alt="Weddings" class="icon-img wedding">
+                <img loading="lazy" src="assets/index-assets/wedding-rings-green.svg" alt="Weddings" class="icon-img wedding-green">
+                </div>
+                <p class="icon-name">Weddings</p>
+            </a>
+
+            <a href="/pages/packages.html#branding-packages-title" class="icon-btn mountain-icon-btn" data-aos="zoom-in" data-aos-delay="1400" data-aos-duration="1000">
+                <div class="icon-img-container">
+                    <img loading="lazy" src="assets/index-assets/mountain.svg" alt="Nature" class="icon-img mountain">
+                    <img loading="lazy" src="assets/index-assets/mountain-green.svg" alt="Nature" class="icon-img mountain-green">
+                </div>
+                <p class="icon-name">Nature</p>
+            </a>
+
+            <a href="/pages/packages.html#family-packages-title" class="icon-btn family-icon-btn" data-aos="zoom-in" data-aos-delay="1400" data-aos-duration="1000">
+                <div class="icon-img-container">
+                    <img loading="lazy" src="assets/index-assets/family.svg" alt="Families" class="icon-img family">
+                    <img loading="lazy" src="assets/index-assets/family-green.svg" alt="Families" class="icon-img family-green">
+                </div>
+                <p class="icon-name">Families</p>
+            </a>
+        </section>
+
+        <section class="about">
+            <div class="about-img">
+                <img src="assets/index-assets/jo-smith-final.png" alt="Jo Smith" loading="lazy">
+            </div>
+
+            <div class="about-info">
+                <h2 class="about-heading">About Me</h2>
+                <img loading="lazy" src="/assets/index-assets/green-brush.png" alt="Divider" class="green-brush-smaller">
+                <p class="about-para">
+                    I am a leading nature photographer with over eight years of experience in landscape and natural world photography, specialising in the landscapes of Scotland.
+                </p>
+                <p class="about-para para-2">
+                    My style has developed organically through capturing the wide variety of landscapes and seascapes found across Scotland. My bold, colourful landscape photographs are always in demand.
+                </p>
+
+                <div class="numbers">
+                    <div class="number-holder">
+                        <img src="assets/index-assets/tree.svg" alt="Tree" class="tree-icon">
+                        <p class="number-text"><span class="number" data-target="8">0</span>+ years experience</p>
+                    </div>
+                    <div class="number-holder">
+                        <img src="assets/index-assets/tree.svg" alt="Tree" class="tree-icon">
+                        <p class="number-text"><span class="number" data-target="200">0</span>+ Weddings</p>
+                    </div>
+                    <div class="number-holder">
+                        <img src="assets/index-assets/tree.svg" alt="Tree" class="tree-icon">
+                        <p class="number-text"><span class="number" data-target="100">0</span>+ Family Photos</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="flex flex-col items-center justify-between lg:flex-row mx-auto py-4 px-8">
+            <div class="footer-logo text-xl">
+                <img src="/assets/header-assets/logo.png" alt="Jo Smith Photography">
+            </div>
+
+            <div class="flex flex-wrap items-center justify-between gap-4">
+                <a href="/index.html" class="nav-footer text-sm mt-6 lg:mt-0 gap-4 lg:gap-6">Home</a>
+                <a href="/pages/work.html" class="nav-footer text-sm mt-6 lg:mt-0 gap-4 lg:gap-6">My Work</a>
+                <a href="/pages/packages.html" class="nav-footer text-sm mt-6 lg:mt-0 gap-4 lg:gap-6">My Packages</a>
+                <a href="/pages/testimonials.html" class="nav-footer text-sm mt-6 lg:mt-0 gap-4 lg:gap-6">Testimonials</a>
+                <a href="/pages/contact.html" class="nav-footer text-sm mt-6 lg:mt-0 gap-4 lg:gap-6">Contact Me</a>
+            </div>
+
+            <p class="text-sm">© Copyright 2026. All rights reserved.</p>
+        </div>
+    </footer>
+    
+
+    <!-- Scripts -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="/js/shutter.js"></script>
+    <script src="/js/hamburger.js"></script>
+    <script src="/js/numbers.js"></script>
+
+    <!-- AOS Library -->
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
+</body>
+</html>

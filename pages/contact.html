@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Explore Jo Smith’s responsive photography portfolio, featuring professional images and creative work designed to showcase her skills and attract clients.">
+    <title>Jo Smith Photography | Wedding | Family | Nature</title>
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap" rel="stylesheet">
+
+    <!-- Links -->
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <link rel="stylesheet" href="/css/root.css">
+    <link rel="stylesheet" href="/css/header.css">
+    <link rel="stylesheet" href="/css/footer.css">
+    <link rel="stylesheet" href="/css/contact.css">
+    
+    <!-- Tailwind -->
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+</head>
+<body>
+    <!-- Background -->
+    <div class="background">
+        <img loading="lazy" src="/assets/index-assets/contour-beige.svg" alt="Background" class="background-img" draggable="false">
+    </div>
+    
+
+    <!-- Shutters -->
+    <!-- <div id="shutter-container">
+        <div class="shutter-blade" id="shutter-top"></div>
+        <div class="shutter-blade" id="shutter-bottom"></div>
+    </div> -->
+
+    <!-- Header -->
+    <header data-aos="fade-down" data-aos-duration="1500">
+        <a href="/index.html" class="logo">
+            <img loading="lazy" src="/assets/header-assets/logo.png" alt="Jo Smith Photography" class="logo">
+        </a>
+        <nav class="nav-desktop">
+            <a href="/index.html" class="nav-item">Home</a>
+            <a href="/pages/work.html" class="nav-item">My Work</a>
+            <a href="/pages/packages.html" class="nav-item">My Packages</a>
+            <a href="/pages/testimonials.html" class="nav-item">Testimonials</a>
+            <a href="/pages/contact.html" class="nav-item">Contact Me</a>
+        </nav>
+        <button class="hamburger-menu-btn">
+            <img src="/assets/header-assets/hamburger.svg" alt="Menu Button">
+        </button>
+    </header>
+
+    <!-- Hamburger Menu -->
+    <section class="hamburger-menu">
+        <div class="close-btn">
+            <img src="/assets/header-assets/close.svg" alt="Exit Menu">
+        </div>
+        <a href="/index.html" class="logo">
+            <img loading="lazy" src="/assets/header-assets/logo.png" alt="Jo Smith Photography" class="logo logo-menu">
+        </a>
+        <nav class="nav-mobile">
+            <a href="/index.html" class="nav-item">
+                <img loading="lazy" src="" alt="" class="nav-item-icon">
+                Home
+            </a>
+            <a href="/pages/work.html" class="nav-item">
+                <img loading="lazy" src="" alt="" class="nav-item-icon">
+                My Work
+            </a>
+            <a href="/pages/packages.html" class="nav-item">
+                <img loading="lazy" src="" alt="" class="nav-item-icon">    
+                My Packages
+            </a>
+            <a href="/pages/testimonials.html" class="nav-item">
+                <img loading="lazy" src="" alt="" class="nav-item-icon">
+                Testimonials
+            </a>
+            <a href="/pages/contact.html" class="nav-item">
+                <img loading="lazy" src="" alt="" class="nav-item-icon">    
+                Contact Me
+            </a>
+        </nav>
+
+        <div class="nav-other">
+            <a href="/pages/packages.html#wedding-packages-title">
+                <img loading="lazy" src="/assets/header-assets/hamburger-weddings.png" alt="Weddings" class="nav-other-img">
+            </a>
+
+            <a href="/pages/packages.html#branding-packages-title">
+                <img loading="lazy" src="/assets/header-assets/hamburger-nature.png" alt="Nature" class="nav-other-img">
+            </a>
+
+            <a href="/pages/packages.html#family-packages-title">
+                <img loading="lazy" src="/assets/header-assets/hamburger-families.png" alt="Families" class="nav-other-img">
+            </a>
+        </div>
+
+        <div class="hamburger-socials">
+            <a href="www.instagram.com" class="hamburger-social">
+                <img src="/assets/header-assets/instagram.svg" alt="Instagram">
+            </a>
+            <a href="www.x.com" class="hamburger-social">
+                <img src="/assets/header-assets/twitter.svg" alt="X">
+            </a>
+        </div>
+    </section>
+
+    <!-- Main -->
+    <main>
+        <section class="contact-form-section" aria-labelledby="contact-form-title">
+            <div class="contact-form-card" data-aos="fade-up" data-aos-duration="1200">
+                <div class="contact-form-intro">
+                    <p class="eyebrow">Let's Plan Your Shoot</p>
+                    <h1 id="contact-form-title">Tell me what you have in mind</h1>
+                    <p class="intro-text">
+                        A few quick choices will help shape your perfect photography experience.
+                    </p>
+                    <p class="contact-note">
+                        Prefer email? Reach me at
+                        <a href="mailto:enquire@josmithphoto.com">enquire@josmithphoto.com</a>
+                    </p>
+                </div>
+
+                <div class="progress-wrapper" aria-label="Form progress">
+                    <div class="progress-top">
+                        <p class="progress-label">Step <span id="current-step">1</span> of <span id="total-steps">6</span></p>
+                        <p class="progress-percent"><span id="progress-percent">17</span>% complete</p>
+                    </div>
+                    <div class="progress-bar" role="progressbar" aria-valuemin="1" aria-valuemax="6" aria-valuenow="1">
+                        <div class="progress-bar-fill" id="progress-bar-fill"></div>
+                    </div>
+                </div>
+
+                <form id="multi-step-contact-form" novalidate>
+                    <section class="form-step active" data-step="1">
+                        <fieldset>
+                            <legend>What type of photography are you interested in?</legend>
+                            <p class="step-help">Choose one to tailor the next options.</p>
+                            <div class="option-grid option-grid-3" role="radiogroup" aria-label="Photography type">
+                                <button type="button" class="option-card single-choice" data-field="serviceType" data-value="Wedding">Wedding photography</button>
+                                <button type="button" class="option-card single-choice" data-field="serviceType" data-value="Family">Family photography</button>
+                                <button type="button" class="option-card single-choice" data-field="serviceType" data-value="Nature">Nature photography</button>
+                            </div>
+                            <input type="hidden" name="serviceType" id="serviceType" required>
+                            <p class="error-message" aria-live="polite"></p>
+                        </fieldset>
+                    </section>
+
+                    <section class="form-step" data-step="2">
+                        <fieldset>
+                            <legend>What are you looking for?</legend>
+                            <p class="step-help">These options adapt based on your selected service.</p>
+                            <div class="option-grid option-grid-2" id="session-options" role="radiogroup" aria-label="Session preferences"></div>
+                            <input type="hidden" name="sessionType" id="sessionType" required>
+                            <p class="error-message" aria-live="polite"></p>
+                        </fieldset>
+                    </section>
+
+                    <section class="form-step" data-step="3">
+                        <fieldset>
+                            <legend>When do you need this?</legend>
+                            <p class="step-help">Pick the timeline that best fits your plans.</p>
+                            <div class="option-grid option-grid-2" role="radiogroup" aria-label="Timeline">
+                                <button type="button" class="option-card single-choice" data-field="timeline" data-value="As soon as possible">As soon as possible</button>
+                                <button type="button" class="option-card single-choice" data-field="timeline" data-value="Within 1 month">Within 1 month</button>
+                                <button type="button" class="option-card single-choice" data-field="timeline" data-value="In 1-3 months">In 1-3 months</button>
+                                <button type="button" class="option-card single-choice" data-field="timeline" data-value="In 3+ months">In 3+ months</button>
+                                <button type="button" class="option-card single-choice" data-field="timeline" data-value="Just exploring for now">Just exploring for now</button>
+                            </div>
+                            <input type="hidden" name="timeline" id="timeline" required>
+                            <p class="error-message" aria-live="polite"></p>
+                        </fieldset>
+                    </section>
+
+                    <section class="form-step" data-step="4">
+                        <fieldset>
+                            <legend>What style are you drawn to?</legend>
+                            <p class="step-help">Choose the visual mood you love most.</p>
+                            <div class="option-grid option-grid-2" role="radiogroup" aria-label="Preferred style">
+                                <button type="button" class="option-card single-choice" data-field="style" data-value="Natural and candid">Natural and candid</button>
+                                <button type="button" class="option-card single-choice" data-field="style" data-value="Romantic and elegant">Romantic and elegant</button>
+                                <button type="button" class="option-card single-choice" data-field="style" data-value="Warm and cozy">Warm and cozy</button>
+                                <button type="button" class="option-card single-choice" data-field="style" data-value="Dramatic and artistic">Dramatic and artistic</button>
+                                <button type="button" class="option-card single-choice" data-field="style" data-value="Not sure yet">Not sure yet</button>
+                            </div>
+                            <input type="hidden" name="style" id="style" required>
+                            <p class="error-message" aria-live="polite"></p>
+                        </fieldset>
+                    </section>
+
+                    <section class="form-step" data-step="5">
+                        <fieldset>
+                            <legend>Anything else we should know?</legend>
+                            <p class="step-help">Optional: share ideas, locations, or must-have shots.</p>
+                            <label for="extraDetails" class="field-label">Extra details (optional)</label>
+                            <textarea id="extraDetails" name="extraDetails" rows="6" maxlength="600" placeholder="Tell me a little more about your vision..."></textarea>
+                            <p class="error-message" aria-live="polite"></p>
+                        </fieldset>
+                    </section>
+
+                    <section class="form-step" data-step="6">
+                        <fieldset>
+                            <legend>How can I reach you?</legend>
+                            <p class="step-help">Final step - I will get back to you as soon as possible.</p>
+                            <div class="contact-fields">
+                                <div class="field-group">
+                                    <label for="fullName">Full name <span aria-hidden="true">*</span></label>
+                                    <input type="text" id="fullName" name="fullName" autocomplete="name" required>
+                                </div>
+                                <div class="field-group">
+                                    <label for="emailAddress">Email address <span aria-hidden="true">*</span></label>
+                                    <input type="email" id="emailAddress" name="emailAddress" autocomplete="email" required>
+                                </div>
+                                <div class="field-group">
+                                    <label for="phoneNumber">Phone number <span aria-hidden="true">*</span></label>
+                                    <input type="tel" id="phoneNumber" name="phoneNumber" autocomplete="tel" required>
+                                </div>
+                            </div>
+                            <p class="error-message" aria-live="polite"></p>
+                        </fieldset>
+                    </section>
+
+                    <div class="form-navigation">
+                        <button type="button" id="prev-btn" class="nav-btn secondary-btn" disabled>Previous</button>
+                        <button type="button" id="next-btn" class="nav-btn primary-btn">Next</button>
+                        <button type="submit" id="submit-btn" class="nav-btn primary-btn hidden">Send my enquiry</button>
+                    </div>
+                </form>
+
+                <section class="success-panel hidden" id="success-panel" aria-live="polite">
+                    <h2>Thank you for reaching out!</h2>
+                    <p>
+                        Your enquiry has been received. I will be in touch soon to discuss your session and next steps.
+                    </p>
+                    <button type="button" id="start-over-btn" class="nav-btn secondary-btn">Start a new enquiry</button>
+                </section>
+            </div>
+
+            <div class="map-container" aria-label="Studio location map" data-aos="fade-up" data-aos-duration="1200">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2204.1586926508685!2d-2.8645617999999997!3d56.4650271!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x48865e96e548488d%3A0x652981c5a1436741!2s987%20Brook%20St%2C%20Broughty%20Ferry%2C%20Dundee%20DD5%202EA!5e0!3m2!1sen!2suk!4v1775657332819!5m2!1sen!2suk" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="flex flex-col items-center justify-between lg:flex-row mx-auto py-4 px-8">
+            <div class="footer-logo text-xl">
+                <img src="/assets/header-assets/logo.png" alt="Jo Smith Photography">
+            </div>
+
+            <div class="flex flex-wrap items-center justify-between gap-4">
+                <a href="/index.html" class="nav-footer text-sm mt-6 lg:mt-0 gap-4 lg:gap-6">Home</a>
+                <a href="/pages/work.html" class="nav-footer text-sm mt-6 lg:mt-0 gap-4 lg:gap-6">My Work</a>
+                <a href="/pages/packages.html" class="nav-footer text-sm mt-6 lg:mt-0 gap-4 lg:gap-6">My Packages</a>
+                <a href="/pages/testimonials.html" class="nav-footer text-sm mt-6 lg:mt-0 gap-4 lg:gap-6">Testimonials</a>
+                <a href="/pages/contact.html" class="nav-footer text-sm mt-6 lg:mt-0 gap-4 lg:gap-6">Contact Me</a>
+            </div>
+
+            <p class="text-sm">© Copyright 2026. All rights reserved.</p>
+        </div>
+    </footer>
+    
+
+    <!-- Scripts -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="/js/shutter.js"></script>
+    <script src="/js/hamburger.js"></script>
+    <script src="/js/contact.js"></script>
+
+    <!-- AOS Library -->
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
+</body>
+</html>

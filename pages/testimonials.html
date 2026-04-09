@@ -1,0 +1,359 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Explore Jo Smith’s responsive photography portfolio, featuring professional images and creative work designed to showcase her skills and attract clients.">
+    <title>Jo Smith Photography | Wedding | Family | Nature</title>
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap" rel="stylesheet">
+
+    <!-- Links -->
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <link rel="stylesheet" href="/css/root.css">
+    <link rel="stylesheet" href="/css/header.css">
+    <link rel="stylesheet" href="/css/footer.css">
+    <link rel="stylesheet" href="/css/testimonials.css">
+    
+    <!-- Tailwind -->
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+</head>
+<body>
+    <!-- Background -->
+    <div class="background">
+        <img loading="lazy" src="/assets/index-assets/contour-beige.svg" alt="Background" class="background-img" draggable="false">
+    </div>
+    
+
+    <!-- Shutters -->
+    <!-- <div id="shutter-container">
+        <div class="shutter-blade" id="shutter-top"></div>
+        <div class="shutter-blade" id="shutter-bottom"></div>
+    </div> -->
+
+    <!-- Header -->
+    <header data-aos="fade-down" data-aos-duration="1500">
+        <a href="/index.html" class="logo">
+            <img loading="lazy" src="/assets/header-assets/logo.png" alt="Jo Smith Photography" class="logo">
+        </a>
+        <nav class="nav-desktop">
+            <a href="/index.html" class="nav-item">Home</a>
+            <a href="/pages/work.html" class="nav-item">My Work</a>
+            <a href="/pages/packages.html" class="nav-item">My Packages</a>
+            <a href="/pages/testimonials.html" class="nav-item">Testimonials</a>
+            <a href="/pages/contact.html" class="nav-item">Contact Me</a>
+        </nav>
+        <button class="hamburger-menu-btn">
+            <img src="/assets/header-assets/hamburger.svg" alt="Menu Button">
+        </button>
+    </header>
+
+    <!-- Hamburger Menu -->
+    <section class="hamburger-menu">
+        <div class="close-btn">
+            <img src="/assets/header-assets/close.svg" alt="Exit Menu">
+        </div>
+        <a href="/index.html" class="logo">
+            <img loading="lazy" src="/assets/header-assets/logo.png" alt="Jo Smith Photography" class="logo logo-menu">
+        </a>
+        <nav class="nav-mobile">
+            <a href="/index.html" class="nav-item">
+                <img loading="lazy" src="" alt="" class="nav-item-icon">
+                Home
+            </a>
+            <a href="/pages/work.html" class="nav-item">
+                <img loading="lazy" src="" alt="" class="nav-item-icon">
+                My Work
+            </a>
+            <a href="/pages/packages.html" class="nav-item">
+                <img loading="lazy" src="" alt="" class="nav-item-icon">    
+                My Packages
+            </a>
+            <a href="/pages/testimonials.html" class="nav-item">
+                <img loading="lazy" src="" alt="" class="nav-item-icon">
+                Testimonials
+            </a>
+            <a href="/pages/contact.html" class="nav-item">
+                <img loading="lazy" src="" alt="" class="nav-item-icon">    
+                Contact Me
+            </a>
+        </nav>
+
+        <div class="nav-other">
+            <a href="/pages/packages.html#wedding-packages-title">
+                <img loading="lazy" src="/assets/header-assets/hamburger-weddings.png" alt="Weddings" class="nav-other-img">
+            </a>
+
+            <a href="/pages/packages.html#branding-packages-title">
+                <img loading="lazy" src="/assets/header-assets/hamburger-nature.png" alt="Nature" class="nav-other-img">
+            </a>
+
+            <a href="/pages/packages.html#family-packages-title">
+                <img loading="lazy" src="/assets/header-assets/hamburger-families.png" alt="Families" class="nav-other-img">
+            </a>
+        </div>
+
+        <div class="hamburger-socials">
+            <a href="www.instagram.com" class="hamburger-social">
+                <img src="/assets/header-assets/instagram.svg" alt="Instagram">
+            </a>
+            <a href="www.x.com" class="hamburger-social">
+                <img src="/assets/header-assets/twitter.svg" alt="X">
+            </a>
+        </div>
+    </section>
+
+    <!-- Main -->
+    <main>
+        <section class="testimonials-page" aria-labelledby="testimonials-title">
+            <div class="text-center mb-10 gallery-info" data-aos="fade-up" data-aos-duration="1200">
+                <p class="uppercase tracking-[0.3em] text-sm mb-2">Client Experience</p>
+                <h1 class="text-4xl md:text-5xl font-semibold mb-4 work-title">Kind Words</h1>
+                <img loading="lazy" src="/assets/index-assets/green-brush.png" alt="Divider" class="green-brush">
+                <p class="max-w-2xl mx-auto text-base md:text-lg">
+                    Every gallery tells a different story. These reflections come from couples and families who invited me into
+                    meaningful moments, from joyful wedding mornings to slow nature-led family sessions.
+                </p>
+            </div>
+            <!-- <div class="testimonials-hero" data-aos="fade-up" data-aos-duration="1200">
+                <p class="hero-eyebrow">Client Experience</p>
+                <h1 id="testimonials-title">Kind Words</h1>
+                <p class="hero-intro">
+                    Every gallery tells a different story. These reflections come from couples and families who invited me into
+                    meaningful moments, from joyful wedding mornings to slow nature-led family sessions.
+                </p>
+            </div> -->
+
+            <nav class="testimonial-filters" aria-label="Filter testimonials" data-aos="fade-up" data-aos-duration="1200">
+                <button type="button" class="filter-btn active" data-filter="all" aria-pressed="true">All</button>
+                <button type="button" class="filter-btn" data-filter="wedding" aria-pressed="false">Weddings</button>
+                <button type="button" class="filter-btn" data-filter="family" aria-pressed="false">Family</button>
+                <button type="button" class="filter-btn" data-filter="nature" aria-pressed="false">Nature</button>
+            </nav>
+
+            <section class="testimonials-grid" aria-live="polite">
+                <article class="testimonial-card" data-category="wedding" data-modal-target="story-ryan-luca" data-aos="fade-up" data-aos-duration="1200">
+                    <img loading="lazy" src="/assets/work-assets/image13.jpg" alt="Two grooms smiling at each other in a car on their wedding day.">
+                    <div class="card-content">
+                        <p class="card-tag">Wedding</p>
+                        <h2>Ryan &amp; Luca</h2>
+                        <p class="preview-quote">"The photos feel exactly like the day: calm, funny, and full of heart."</p>
+                        <p class="photographer-preview">
+                            We moved through their day gently, letting natural moments lead. Their quiet drive between venues became
+                            one of the most memorable parts of the gallery.
+                        </p>
+                        <button type="button" class="read-story-btn">Read Full Story</button>
+                    </div>
+                </article>
+
+                <article class="testimonial-card" data-category="wedding" data-modal-target="story-emma-chloe" data-aos="fade-up" data-aos-duration="1200">
+                    <img loading="lazy" src="/assets/work-assets/image11.jpg" alt="Two brides holding hands and smiling at each other outdoors.">
+                    <div class="card-content">
+                        <p class="card-tag">Wedding</p>
+                        <h2>Emma &amp; Chloe</h2>
+                        <p class="preview-quote">"We felt completely looked after from the first call to the final gallery."</p>
+                        <p class="photographer-preview">
+                            Their ceremony had a soft, romantic atmosphere and we built portraits around connection rather than poses.
+                            The hand-holding frames became the soul of their collection.
+                        </p>
+                        <button type="button" class="read-story-btn">Read Full Story</button>
+                    </div>
+                </article>
+
+                <article class="testimonial-card" data-category="family" data-modal-target="story-mason-family" data-aos="fade-up" data-aos-duration="1200">
+                    <img loading="lazy" src="/assets/work-assets/image9.jpg" alt="Mum, dad, and their baby lying on leaves and looking up at the camera.">
+                    <div class="card-content">
+                        <p class="card-tag">Family</p>
+                        <h2>The Mason Family</h2>
+                        <p class="preview-quote">"Nothing felt forced, and somehow every photo still feels full of life."</p>
+                        <p class="photographer-preview">
+                            We leaned into play, movement, and little pauses between giggles. Shooting from above while they lay in
+                            autumn leaves gave us a warm, connected frame they adored.
+                        </p>
+                        <button type="button" class="read-story-btn">Read Full Story</button>
+                    </div>
+                </article>
+
+                <article class="testimonial-card" data-category="family" data-modal-target="story-carter-family" data-aos="fade-up" data-aos-duration="1200">
+                    <img loading="lazy" src="/assets/work-assets/image6.jpg" alt="A couple with their baby and dog standing in a field during golden hour.">
+                    <div class="card-content">
+                        <p class="card-tag">Family</p>
+                        <h2>The Carter Family</h2>
+                        <p class="preview-quote">"You captured us exactly as we are, dog chaos and all."</p>
+                        <p class="photographer-preview">
+                            This was a beautifully real session with muddy boots, a curious dog, and golden evening light. It felt
+                            relaxed and personal from start to finish.
+                        </p>
+                        <button type="button" class="read-story-btn">Read Full Story</button>
+                    </div>
+                </article>
+
+                <article class="testimonial-card" data-category="nature" data-modal-target="story-isla-brand" data-aos="fade-up" data-aos-duration="1200">
+                    <img loading="lazy" src="/assets/work-assets/image17.png" alt="A serene lake surrounded by trees with a mountain in the background.">
+                    <div class="card-content">
+                        <p class="card-tag">Nature</p>
+                        <h2>Isla Grant</h2>
+                        <p class="preview-quote">"The final images are peaceful, cinematic, and exactly the tone my brand needed."</p>
+                        <p class="photographer-preview">
+                            We planned around early mountain light and quiet water reflections. The landscape gave her brand shoot a
+                            grounded, atmospheric identity.
+                        </p>
+                        <button type="button" class="read-story-btn">Read Full Story</button>
+                    </div>
+                </article>
+            </section>
+        </section>
+
+        <section class="testimonial-modal-overlay hidden" id="testimonial-modal-overlay" aria-hidden="true">
+            <div class="testimonial-modal hidden" id="story-ryan-luca" role="dialog" aria-modal="true" aria-labelledby="story-ryan-luca-title">
+                <button type="button" class="modal-close" aria-label="Close testimonial">×</button>
+                <img loading="lazy" src="/assets/work-assets/image13.jpg" alt="Two grooms smiling at each other in a car on their wedding day.">
+                <div class="modal-content">
+                    <p class="modal-tag">Wedding</p>
+                    <h3 id="story-ryan-luca-title">Ryan &amp; Luca</h3>
+                    <p class="modal-meta"><strong>Package:</strong> Intimate Wedding Package</p>
+                    <p class="modal-meta"><strong>Session Feel:</strong> Relaxed city celebration with candid storytelling</p>
+                    <p class="modal-quote">
+                        "Jo blended in so naturally that we forgot the camera was there. She caught us laughing, calming each other
+                        before the ceremony, and all the little expressions we never knew we were making."
+                    </p>
+                    <p>
+                        Their day moved at an easy pace, with time to breathe between locations. During the drive to the reception,
+                        they sat together smiling and talking quietly, and those frames became the emotional anchor of the gallery.
+                    </p>
+                    <p>
+                        We focused on connection over perfection: hand squeezes, side glances, and the joy of being fully present.
+                        The final gallery felt intimate, warm, and genuinely theirs.
+                    </p>
+                </div>
+            </div>
+
+            <div class="testimonial-modal hidden" id="story-emma-chloe" role="dialog" aria-modal="true" aria-labelledby="story-emma-chloe-title">
+                <button type="button" class="modal-close" aria-label="Close testimonial">×</button>
+                <img loading="lazy" src="/assets/work-assets/image11.jpg" alt="Two brides holding hands and smiling at each other outdoors.">
+                <div class="modal-content">
+                    <p class="modal-tag">Wedding</p>
+                    <h3 id="story-emma-chloe-title">Emma &amp; Chloe</h3>
+                    <p class="modal-meta"><strong>Package:</strong> Full-Day Wedding Package</p>
+                    <p class="modal-meta"><strong>Session Feel:</strong> Romantic, elegant, and joy-led throughout</p>
+                    <p class="modal-quote">
+                        "From our first call, Jo understood exactly what mattered to us: natural photos that still felt elevated.
+                        Looking through our gallery feels like reliving each chapter of the day."
+                    </p>
+                    <p>
+                        Their venue had soft garden light and a gentle breeze all afternoon, perfect for natural portraits. We
+                        planned enough portrait time to feel intentional, while still keeping them present with guests.
+                    </p>
+                    <p>
+                        My favorite sequence was the two of them holding hands and laughing between setups. It captured how grounded
+                        and in-sync they were, and that warmth runs through their entire gallery.
+                    </p>
+                </div>
+            </div>
+
+            <div class="testimonial-modal hidden" id="story-mason-family" role="dialog" aria-modal="true" aria-labelledby="story-mason-family-title">
+                <button type="button" class="modal-close" aria-label="Close testimonial">×</button>
+                <img loading="lazy" src="/assets/work-assets/image9.jpg" alt="Mum, dad, and their baby lying on leaves and looking up at the camera.">
+                <div class="modal-content">
+                    <p class="modal-tag">Family</p>
+                    <h3 id="story-mason-family-title">The Mason Family</h3>
+                    <p class="modal-meta"><strong>Package:</strong> Classic Family Session</p>
+                    <p class="modal-meta"><strong>Session Feel:</strong> Playful and connected in an autumn park setting</p>
+                    <p class="modal-quote">
+                        "Jo made the whole session feel like a walk rather than a photoshoot. Even with a wriggly baby, she captured
+                        tenderness and personality in every frame."
+                    </p>
+                    <p>
+                        We chose a leafy woodland path with soft overhead light and let the session unfold naturally. Their baby
+                        responded so well when everyone stayed relaxed and kept moving.
+                    </p>
+                    <p>
+                        The overhead family frame in the leaves became an instant favorite. It had warmth, eye contact, and that
+                        candid sense of togetherness they wanted for their home prints.
+                    </p>
+                </div>
+            </div>
+
+            <div class="testimonial-modal hidden" id="story-carter-family" role="dialog" aria-modal="true" aria-labelledby="story-carter-family-title">
+                <button type="button" class="modal-close" aria-label="Close testimonial">×</button>
+                <img loading="lazy" src="/assets/work-assets/image6.jpg" alt="A couple with their baby and dog standing in a field during golden hour.">
+                <div class="modal-content">
+                    <p class="modal-tag">Family</p>
+                    <h3 id="story-carter-family-title">The Carter Family</h3>
+                    <p class="modal-meta"><strong>Package:</strong> Storytelling Family Session</p>
+                    <p class="modal-meta"><strong>Session Feel:</strong> Golden-hour field session with candid family moments</p>
+                    <p class="modal-quote">
+                        "Including our dog was so important to us, and Jo embraced every bit of the chaos. The images feel genuine,
+                        loving, and full of movement."
+                    </p>
+                    <p>
+                        We timed this session for late-evening light and let their little one and dog set the pace. That freedom
+                        gave us naturally expressive images without over-directing.
+                    </p>
+                    <p>
+                        One of the most memorable moments was a quiet pause in the long grass where all three looked toward the baby
+                        at once. It was simple, heartfelt, and completely authentic to them.
+                    </p>
+                </div>
+            </div>
+
+            <div class="testimonial-modal hidden" id="story-isla-brand" role="dialog" aria-modal="true" aria-labelledby="story-isla-brand-title">
+                <button type="button" class="modal-close" aria-label="Close testimonial">×</button>
+                <img loading="lazy" src="/assets/work-assets/image17.png" alt="A serene lake surrounded by trees with a mountain in the background.">
+                <div class="modal-content">
+                    <p class="modal-tag">Nature</p>
+                    <h3 id="story-isla-brand-title">Isla Grant</h3>
+                    <p class="modal-meta"><strong>Package:</strong> Signature Nature Session</p>
+                    <p class="modal-meta"><strong>Session Feel:</strong> Peaceful mountain-lake atmosphere for personal brand visuals</p>
+                    <p class="modal-quote">
+                        "I wanted imagery that felt grounded and reflective, and Jo delivered exactly that. Every frame has depth,
+                        space, and a calm energy that feels true to my work."
+                    </p>
+                    <p>
+                        We started just after sunrise to catch soft contrast across the lake and tree line. The still water and
+                        mountain backdrop gave us beautiful visual depth without feeling over-styled.
+                    </p>
+                    <p>
+                        This session was less about poses and more about atmosphere. The final set became the foundation for her
+                        website refresh, print assets, and social campaign visuals.
+                    </p>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="flex flex-col items-center justify-between lg:flex-row mx-auto py-4 px-8">
+            <div class="footer-logo text-xl">
+                <img src="/assets/header-assets/logo.png" alt="Jo Smith Photography">
+            </div>
+
+            <div class="flex flex-wrap items-center justify-between gap-4">
+                <a href="/index.html" class="nav-footer text-sm mt-6 lg:mt-0 gap-4 lg:gap-6">Home</a>
+                <a href="/pages/work.html" class="nav-footer text-sm mt-6 lg:mt-0 gap-4 lg:gap-6">My Work</a>
+                <a href="/pages/packages.html" class="nav-footer text-sm mt-6 lg:mt-0 gap-4 lg:gap-6">My Packages</a>
+                <a href="/pages/testimonials.html" class="nav-footer text-sm mt-6 lg:mt-0 gap-4 lg:gap-6">Testimonials</a>
+                <a href="/pages/contact.html" class="nav-footer text-sm mt-6 lg:mt-0 gap-4 lg:gap-6">Contact Me</a>
+            </div>
+
+            <p class="text-sm">© Copyright 2026. All rights reserved.</p>
+        </div>
+    </footer>
+    
+
+    <!-- Scripts -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="/js/shutter.js"></script>
+    <script src="/js/hamburger.js"></script>
+    <script src="/js/testimonials.js"></script>
+
+    <!-- AOS Library -->
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
+</body>
+</html>

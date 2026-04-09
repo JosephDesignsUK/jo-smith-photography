@@ -1,0 +1,340 @@
+main {
+    margin-top: 150px;
+}
+
+.gallery-section{
+    margin-top: 100px;
+    color: var(--dark-green);
+}
+
+.gallery-info{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.work-title{
+    font-family: var(--heading-font) !important;
+    font-size: 5em;
+    margin: 0 0 30px 0;
+    font-weight: 600;
+}
+
+.green-brush{
+    width: 300px;
+    margin-bottom: 20px;
+}
+
+.testimonials-page {
+    width: min(1140px, 92%);
+    margin: 2.8rem auto 4rem;
+}
+
+.testimonials-hero {
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+.hero-eyebrow {
+    margin: 0 0 0.45rem;
+    font-family: "Montserrat", sans-serif;
+    font-size: 0.75rem;
+    letter-spacing: 0.14em;
+    text-transform: uppercase;
+    color: #8a6a54;
+}
+
+.testimonials-hero h1 {
+    margin: 0;
+    font-family: "Playfair Display", serif;
+    font-size: clamp(2rem, 5vw, 3rem);
+    color: #2f2017;
+}
+
+.hero-intro {
+    margin: 0.9rem auto 0;
+    max-width: 70ch;
+    color: #604d3f;
+    font-family: "Montserrat", sans-serif;
+    line-height: 1.7;
+}
+
+.testimonial-filters {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.6rem;
+    justify-content: center;
+    margin-bottom: 1.8rem;
+}
+
+.filter-btn {
+    border: 1px solid #d4c3b4;
+    background: #fff;
+    color: #563f2f;
+    border-radius: 999px;
+    padding: 0.5rem 1rem;
+    font-family: "Montserrat", sans-serif;
+    font-size: 0.88rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.2s ease;
+}
+
+.filter-btn:hover,
+.filter-btn:focus-visible {
+    border-color: #9f7658;
+    transform: translateY(-1px);
+    outline: none;
+}
+
+.filter-btn.active {
+    background: linear-gradient(90deg, #7a573f 0%, #9d7354 100%);
+    color: #fff;
+    border-color: transparent;
+}
+
+.testimonials-grid {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 1.2rem;
+}
+
+.testimonial-card {
+    background: rgba(255, 255, 255, 0.9);
+    border: 1px solid rgba(134, 104, 82, 0.16);
+    border-radius: 1rem;
+    overflow: hidden;
+    box-shadow: 0 12px 28px rgba(58, 39, 25, 0.09);
+    display: flex;
+    flex-direction: column;
+    transition: transform 0.25s ease, box-shadow 0.25s ease, border-color 0.25s ease;
+}
+
+.testimonial-card:hover {
+    transform: translateY(-4px);
+    border-color: rgba(138, 105, 80, 0.42);
+    box-shadow: 0 18px 32px rgba(58, 39, 25, 0.14);
+}
+
+.testimonial-card.hidden-card {
+    display: none;
+}
+
+.testimonial-card img {
+    width: 100%;
+    aspect-ratio: 4 / 3;
+    object-fit: cover;
+    display: block;
+}
+
+.card-content {
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+    gap: 0.65rem;
+    height: 100%;
+}
+
+.card-tag {
+    margin: 0;
+    align-self: flex-start;
+    background: #f1e4d9;
+    color: #6a4832;
+    border-radius: 999px;
+    padding: 0.2rem 0.55rem;
+    font-family: "Montserrat", sans-serif;
+    text-transform: uppercase;
+    letter-spacing: 0.07em;
+    font-size: 0.7rem;
+    font-weight: 700;
+}
+
+.card-content h2 {
+    margin: 0;
+    font-family: "Playfair Display", serif;
+    font-size: 1.35rem;
+    color: #302117;
+}
+
+.preview-quote {
+    margin: 0;
+    font-family: "Playfair Display", serif;
+    font-size: 1.05rem;
+    color: #4e392a;
+    line-height: 1.45;
+}
+
+.photographer-preview {
+    margin: 0;
+    color: #665344;
+    font-family: "Montserrat", sans-serif;
+    line-height: 1.6;
+    font-size: 0.92rem;
+}
+
+.read-story-btn {
+    margin-top: auto;
+    align-self: flex-start;
+    border: 0;
+    border-radius: 999px;
+    background: linear-gradient(90deg, #7a573f 0%, #9d7354 100%);
+    color: #fff;
+    font-family: "Montserrat", sans-serif;
+    font-size: 0.86rem;
+    font-weight: 600;
+    padding: 0.55rem 0.9rem;
+    cursor: pointer;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.read-story-btn:hover,
+.read-story-btn:focus-visible {
+    transform: translateY(-1px);
+    box-shadow: 0 10px 20px rgba(87, 61, 42, 0.22);
+    outline: none;
+}
+
+.testimonial-modal-overlay {
+    position: fixed;
+    inset: 0;
+    z-index: 1200;
+    background: rgba(20, 13, 8, 0.58);
+    padding: 1.25rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.testimonial-modal-overlay.hidden {
+    display: none;
+}
+
+.testimonial-modal {
+    width: min(960px, 100%);
+    max-height: 92vh;
+    overflow-y: auto;
+    background: #fffdfb;
+    border-radius: 1rem;
+    border: 1px solid rgba(137, 109, 86, 0.22);
+    box-shadow: 0 24px 45px rgba(35, 23, 15, 0.3);
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    position: relative;
+    animation: modalRise 0.22s ease;
+}
+
+.testimonial-modal.hidden {
+    display: none;
+}
+
+.testimonial-modal img {
+    width: 100%;
+    height: 100%;
+    min-height: 340px;
+    object-fit: cover;
+}
+
+.modal-content {
+    padding: 1.3rem 1.3rem 1.5rem;
+}
+
+.modal-tag {
+    margin: 0;
+    font-family: "Montserrat", sans-serif;
+    text-transform: uppercase;
+    letter-spacing: 0.08em;
+    font-size: 0.72rem;
+    color: #8a664c;
+    font-weight: 700;
+}
+
+.modal-content h3 {
+    margin: 0.4rem 0 0.8rem;
+    font-family: "Playfair Display", serif;
+    font-size: clamp(1.4rem, 3vw, 1.9rem);
+    color: #2f2117;
+}
+
+.modal-meta {
+    margin: 0.15rem 0;
+    color: #5c493a;
+    font-family: "Montserrat", sans-serif;
+    font-size: 0.9rem;
+}
+
+.modal-quote {
+    margin: 0.95rem 0;
+    color: #433023;
+    font-family: "Playfair Display", serif;
+    font-size: 1.03rem;
+    line-height: 1.5;
+}
+
+.modal-content p {
+    color: #5f4b3d;
+    line-height: 1.6;
+    font-family: "Montserrat", sans-serif;
+    font-size: 0.92rem;
+}
+
+.modal-close {
+    position: absolute;
+    top: 0.7rem;
+    right: 0.75rem;
+    border: 0;
+    width: 34px;
+    height: 34px;
+    border-radius: 50%;
+    background: rgba(255, 255, 255, 0.92);
+    color: #4e3628;
+    font-size: 1.4rem;
+    line-height: 1;
+    cursor: pointer;
+}
+
+.modal-close:hover,
+.modal-close:focus-visible {
+    background: #f2e8de;
+    outline: none;
+}
+
+@keyframes modalRise {
+    from {
+        opacity: 0;
+        transform: translateY(8px) scale(0.98);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0) scale(1);
+    }
+}
+
+@media (max-width: 1024px) {
+    .testimonials-grid {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+
+    .testimonial-modal {
+        grid-template-columns: 1fr;
+    }
+
+    .testimonial-modal img {
+        min-height: 260px;
+        max-height: 320px;
+    }
+}
+
+@media (max-width: 640px) {
+    main {
+        margin-top: 120px;
+    }
+
+    .testimonials-page {
+        margin-top: 1.8rem;
+    }
+
+    .testimonials-grid {
+        grid-template-columns: 1fr;
+    }
+}

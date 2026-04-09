@@ -1,0 +1,405 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Explore Jo Smith’s responsive photography portfolio, featuring professional images and creative work designed to showcase her skills and attract clients.">
+    <title>Jo Smith Photography | Wedding | Family | Nature</title>
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap" rel="stylesheet">
+
+    <!-- Links -->
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <link rel="stylesheet" href="/css/root.css">
+    <link rel="stylesheet" href="/css/header.css">
+    <link rel="stylesheet" href="/css/footer.css">
+    <link rel="stylesheet" href="/css/work.css">
+    
+    <!-- Tailwind -->
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+
+    <!-- PhotoSwipe -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/photoswipe@5.4.4/dist/photoswipe.css">
+</head>
+<body>
+    <!-- Background -->
+    <div class="background">
+        <img loading="lazy" src="/assets/index-assets/contour-beige.svg" alt="Background" class="background-img" draggable="false">
+    </div>
+    
+
+    <!-- Shutters -->
+    <!-- <div id="shutter-container">
+        <div class="shutter-blade" id="shutter-top"></div>
+        <div class="shutter-blade" id="shutter-bottom"></div>
+    </div> -->
+
+    <!-- Header -->
+    <header data-aos="fade-down" data-aos-duration="1500">
+        <a href="/index.html" class="logo">
+            <img loading="lazy" src="/assets/header-assets/logo.png" alt="Jo Smith Photography" class="logo">
+        </a>
+        <nav class="nav-desktop">
+            <a href="/index.html" class="nav-item">Home</a>
+            <a href="/pages/work.html" class="nav-item">My Work</a>
+            <a href="/pages/packages.html" class="nav-item">My Packages</a>
+            <a href="/pages/testimonials.html" class="nav-item">Testimonials</a>
+            <a href="/pages/contact.html" class="nav-item">Contact Me</a>
+        </nav>
+        <button class="hamburger-menu-btn">
+            <img src="/assets/header-assets/hamburger.svg" alt="Menu Button">
+        </button>
+    </header>
+
+    <!-- Hamburger Menu -->
+    <section class="hamburger-menu">
+        <div class="close-btn">
+            <img src="/assets/header-assets/close.svg" alt="Exit Menu">
+        </div>
+        <a href="/index.html" class="logo">
+            <img loading="lazy" src="/assets/header-assets/logo.png" alt="Jo Smith Photography" class="logo logo-menu">
+        </a>
+        <nav class="nav-mobile">
+            <a href="/index.html" class="nav-item">
+                <img loading="lazy" src="" alt="" class="nav-item-icon">
+                Home
+            </a>
+            <a href="/pages/work.html" class="nav-item">
+                <img loading="lazy" src="" alt="" class="nav-item-icon">
+                My Work
+            </a>
+            <a href="/pages/packages.html" class="nav-item">
+                <img loading="lazy" src="" alt="" class="nav-item-icon">    
+                My Packages
+            </a>
+            <a href="/pages/testimonials.html" class="nav-item">
+                <img loading="lazy" src="" alt="" class="nav-item-icon">
+                Testimonials
+            </a>
+            <a href="/pages/contact.html" class="nav-item">
+                <img loading="lazy" src="" alt="" class="nav-item-icon">    
+                Contact Me
+            </a>
+        </nav>
+
+        <div class="nav-other">
+            <a href="/pages/packages.html#wedding-packages-title">
+                <img loading="lazy" src="/assets/header-assets/hamburger-weddings.png" alt="Weddings" class="nav-other-img">
+            </a>
+
+            <a href="/pages/packages.html#branding-packages-title">
+                <img loading="lazy" src="/assets/header-assets/hamburger-nature.png" alt="Nature" class="nav-other-img">
+            </a>
+
+            <a href="/pages/packages.html#family-packages-title">
+                <img loading="lazy" src="/assets/header-assets/hamburger-families.png" alt="Families" class="nav-other-img">
+            </a>
+        </div>
+
+        <div class="hamburger-socials">
+            <a href="www.instagram.com" class="hamburger-social">
+                <img src="/assets/header-assets/instagram.svg" alt="Instagram">
+            </a>
+            <a href="www.x.com" class="hamburger-social">
+                <img src="/assets/header-assets/twitter.svg" alt="X">
+            </a>
+        </div>
+    </section>
+
+    <!-- Main -->
+    <main>
+        <section class="gallery-section py-16 px-6 lg:px-12">
+            <div class="max-w-7xl mx-auto">
+                <div class="text-center mb-10 gallery-info" data-aos="fade-up" data-aos-duration="1200">
+                    <p class="uppercase tracking-[0.3em] text-sm mb-2">Portfolio</p>
+                    <h1 class="text-4xl md:text-5xl font-semibold mb-4 work-title">My Work</h1>
+                    <img loading="lazy" src="/assets/index-assets/green-brush.png" alt="Divider" class="green-brush">
+                    <p class="max-w-2xl mx-auto text-base md:text-lg">
+                        A collection of wedding, family, and nature photography that captures real emotion, beautiful details, and timeless moments.
+                    </p>
+                </div>
+            
+                <div id="my-gallery" class="columns-1 sm:columns-2 lg:columns-3 gap-6 space-y-6">
+                    <a href="/assets/work-assets/image3.jpg"
+                       data-pswp-width="1000"
+                       data-pswp-height="667"
+                       target="_blank"
+                       class="block mb-6 break-inside-avoid overflow-hidden rounded-2xl shadow-lg"
+                       data-aos="zoom-in"
+                       data-aos-duration="1000">
+                        <img src="/assets/work-assets/image3.jpg" loading="lazy"
+                             alt="Grooms Dancing"
+                             class="w-full h-auto object-cover hover:scale-[1.02] transition duration-300">
+                    </a>
+                
+                    <a href="/assets/work-assets/image2.jpg"
+                       data-pswp-width="1000"
+                       data-pswp-height="667"
+                       target="_blank"
+                       class="block mb-6 break-inside-avoid overflow-hidden rounded-2xl shadow-lg"
+                       data-aos="zoom-in"
+                       data-aos-duration="1000"
+                       data-aos-delay="100">
+                        <img src="/assets/work-assets/image2.jpg" loading="lazy"
+                             alt="Higland Cow"
+                             class="w-full h-auto object-cover hover:scale-[1.02] transition duration-300">
+                    </a>
+                
+                    <a href="/assets/work-assets/image1.jpg"
+                       data-pswp-width="1000"
+                       data-pswp-height="667"
+                       target="_blank"
+                       class="block mb-6 break-inside-avoid overflow-hidden rounded-2xl shadow-lg"
+                       data-aos="zoom-in"
+                       data-aos-duration="1000"
+                       data-aos-delay="200">
+                        <img src="/assets/work-assets/image1.jpg" loading="lazy"
+                             alt="Bride and Groom sitting in a field"
+                             class="w-full h-auto object-cover hover:scale-[1.02] transition duration-300">
+                    </a>
+                
+                    <a href="/assets/work-assets/image4.jpg"
+                       data-pswp-width="1000"
+                       data-pswp-height="667"
+                       target="_blank"
+                       class="block mb-6 break-inside-avoid overflow-hidden rounded-2xl shadow-lg"
+                       data-aos="zoom-in"
+                       data-aos-duration="1000">
+                        <img src="/assets/work-assets/image4.jpg" loading="lazy"
+                             alt="Rainbow"
+                             class="w-full h-auto object-cover hover:scale-[1.02] transition duration-300">
+                    </a>
+                
+                    <a href="/assets/work-assets/image5.jpg"
+                       data-pswp-width="667"
+                       data-pswp-height="1000"
+                       target="_blank"
+                       class="block mb-6 break-inside-avoid overflow-hidden rounded-2xl shadow-lg"
+                       data-aos="zoom-in"
+                       data-aos-duration="1000"
+                       data-aos-delay="100">
+                        <img src="/assets/work-assets/image5.jpg" loading="lazy"
+                             alt="Family sitting in tall grass"
+                             class="w-full h-auto object-cover hover:scale-[1.02] transition duration-300">
+                    </a>
+                
+                    <a href="/assets/work-assets/image6.jpg"
+                       data-pswp-width="1000"
+                       data-pswp-height="667"
+                       target="_blank"
+                       class="block mb-6 break-inside-avoid overflow-hidden rounded-2xl shadow-lg"
+                       data-aos="zoom-in"
+                       data-aos-duration="1000"
+                       data-aos-delay="200">
+                        <img src="/assets/work-assets/image6.jpg" loading="lazy"
+                             alt="Family with dog"
+                             class="w-full h-auto object-cover hover:scale-[1.02] transition duration-300">
+                    </a>
+
+                    <a href="/assets/work-assets/image7.jpg"
+                       data-pswp-width="667"
+                       data-pswp-height="1000"
+                       target="_blank"
+                       class="block mb-6 break-inside-avoid overflow-hidden rounded-2xl shadow-lg"
+                       data-aos="zoom-in"
+                       data-aos-duration="1000"
+                       data-aos-delay="200">
+                        <img src="/assets/work-assets/image7.jpg" loading="lazy"
+                             alt="Couple with bride laughing"
+                             class="w-full h-auto object-cover hover:scale-[1.02] transition duration-300">
+                    </a>
+
+                    <a href="/assets/work-assets/image8.jpg"
+                       data-pswp-width="667"
+                       data-pswp-height="1000"
+                       target="_blank"
+                       class="block mb-6 break-inside-avoid overflow-hidden rounded-2xl shadow-lg"
+                       data-aos="zoom-in"
+                       data-aos-duration="1000"
+                       data-aos-delay="200">
+                        <img src="/assets/work-assets/image8.jpg" loading="lazy"
+                             alt="Lake and Mountain"
+                             class="w-full h-auto object-cover hover:scale-[1.02] transition duration-300">
+                    </a>
+
+                    <a href="/assets/work-assets/image9.jpg"
+                       data-pswp-width="1000"
+                       data-pswp-height="667"
+                       target="_blank"
+                       class="block mb-6 break-inside-avoid overflow-hidden rounded-2xl shadow-lg"
+                       data-aos="zoom-in"
+                       data-aos-duration="1000"
+                       data-aos-delay="200">
+                        <img src="/assets/work-assets/image9.jpg" loading="lazy"
+                             alt="Family lying on the ground looking up"
+                             class="w-full h-auto object-cover hover:scale-[1.02] transition duration-300">
+                    </a>
+
+                    <a href="/assets/work-assets/image10.jpg"
+                       data-pswp-width="1000"
+                       data-pswp-height="667"
+                       target="_blank"
+                       class="block mb-6 break-inside-avoid overflow-hidden rounded-2xl shadow-lg"
+                       data-aos="zoom-in"
+                       data-aos-duration="1000"
+                       data-aos-delay="200">
+                        <img src="/assets/work-assets/image10.jpg" loading="lazy"
+                             alt="Bride and Groom kissing"
+                             class="w-full h-auto object-cover hover:scale-[1.02] transition duration-300">
+                    </a>
+
+                    <a href="/assets/work-assets/image11.jpg"
+                       data-pswp-width="1000"
+                       data-pswp-height="635"
+                       target="_blank"
+                       class="block mb-6 break-inside-avoid overflow-hidden rounded-2xl shadow-lg"
+                       data-aos="zoom-in"
+                       data-aos-duration="1000"
+                       data-aos-delay="200">
+                        <img src="/assets/work-assets/image11.jpg" loading="lazy"
+                             alt="Brides holding hands"
+                             class="w-full h-auto object-cover hover:scale-[1.02] transition duration-300">
+                    </a>
+
+                    <a href="/assets/work-assets/image12.jpg"
+                       data-pswp-width="1000"
+                       data-pswp-height="550"
+                       target="_blank"
+                       class="block mb-6 break-inside-avoid overflow-hidden rounded-2xl shadow-lg"
+                       data-aos="zoom-in"
+                       data-aos-duration="1000"
+                       data-aos-delay="200">
+                        <img src="/assets/work-assets/image12.jpg" loading="lazy"
+                             alt="Brides Hugging"
+                             class="w-full h-auto object-cover hover:scale-[1.02] transition duration-300">
+                    </a>
+
+                    <a href="/assets/work-assets/image13.jpg"
+                       data-pswp-width="667"
+                       data-pswp-height="1000"
+                       target="_blank"
+                       class="block mb-6 break-inside-avoid overflow-hidden rounded-2xl shadow-lg"
+                       data-aos="zoom-in"
+                       data-aos-duration="1000"
+                       data-aos-delay="200">
+                        <img src="/assets/work-assets/image13.jpg" loading="lazy"
+                             alt="Grooms on vehicle"
+                             class="w-full h-auto object-cover hover:scale-[1.02] transition duration-300">
+                    </a>
+
+                    <a href="/assets/work-assets/image14.jpg"
+                       data-pswp-width="1000"
+                       data-pswp-height="667"
+                       target="_blank"
+                       class="block mb-6 break-inside-avoid overflow-hidden rounded-2xl shadow-lg"
+                       data-aos="zoom-in"
+                       data-aos-duration="1000"
+                       data-aos-delay="200">
+                        <img src="/assets/work-assets/image14.jpg" loading="lazy"
+                             alt="Two dads and their son"
+                             class="w-full h-auto object-cover hover:scale-[1.02] transition duration-300">
+                    </a>
+
+                    <a href="/assets/work-assets/image15.jpg"
+                       data-pswp-width="1000"
+                       data-pswp-height="667"
+                       target="_blank"
+                       class="block mb-6 break-inside-avoid overflow-hidden rounded-2xl shadow-lg"
+                       data-aos="zoom-in"
+                       data-aos-duration="1000"
+                       data-aos-delay="200">
+                        <img src="/assets/work-assets/image15.jpg" loading="lazy"
+                             alt="Two dads and their son"
+                             class="w-full h-auto object-cover hover:scale-[1.02] transition duration-300">
+                    </a>
+
+                    <a href="/assets/work-assets/image16.png"
+                       data-pswp-width="2528"
+                       data-pswp-height="1684"
+                       target="_blank"
+                       class="block mb-6 break-inside-avoid overflow-hidden rounded-2xl shadow-lg"
+                       data-aos="zoom-in"
+                       data-aos-duration="1000"
+                       data-aos-delay="200">
+                        <img src="/assets/work-assets/image16.png" loading="lazy"
+                             alt="Wedding Couple in Woods"
+                             class="w-full h-auto object-cover hover:scale-[1.02] transition duration-300">
+                    </a>
+
+                    <a href="/assets/work-assets/image17.png"
+                       data-pswp-width="2528"
+                       data-pswp-height="1684"
+                       target="_blank"
+                       class="block mb-6 break-inside-avoid overflow-hidden rounded-2xl shadow-lg"
+                       data-aos="zoom-in"
+                       data-aos-duration="1000"
+                       data-aos-delay="200">
+                        <img src="/assets/work-assets/image17.png" loading="lazy"
+                             alt="Woods"
+                             class="w-full h-auto object-cover hover:scale-[1.02] transition duration-300">
+                    </a>
+
+                    <a href="/assets/work-assets/image18.png"
+                       data-pswp-width="2528"
+                       data-pswp-height="1684"
+                       target="_blank"
+                       class="block mb-6 break-inside-avoid overflow-hidden rounded-2xl shadow-lg"
+                       data-aos="zoom-in"
+                       data-aos-duration="1000"
+                       data-aos-delay="200">
+                        <img src="/assets/work-assets/image18.png" loading="lazy"
+                             alt="Family running through field"
+                             class="w-full h-auto object-cover hover:scale-[1.02] transition duration-300">
+                    </a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="flex flex-col items-center justify-between lg:flex-row mx-auto py-4 px-8">
+            <div class="footer-logo text-xl">
+                <img src="/assets/header-assets/logo.png" alt="Jo Smith Photography">
+            </div>
+
+            <div class="flex flex-wrap items-center justify-between gap-4">
+                <a href="/index.html" class="nav-footer text-sm mt-6 lg:mt-0 gap-4 lg:gap-6">Home</a>
+                <a href="/pages/work.html" class="nav-footer text-sm mt-6 lg:mt-0 gap-4 lg:gap-6">My Work</a>
+                <a href="/pages/packages.html" class="nav-footer text-sm mt-6 lg:mt-0 gap-4 lg:gap-6">My Packages</a>
+                <a href="/pages/testimonials.html" class="nav-footer text-sm mt-6 lg:mt-0 gap-4 lg:gap-6">Testimonials</a>
+                <a href="/pages/contact.html" class="nav-footer text-sm mt-6 lg:mt-0 gap-4 lg:gap-6">Contact Me</a>
+            </div>
+
+            <p class="text-sm">© Copyright 2026. All rights reserved.</p>
+        </div>
+    </footer>
+    
+
+    <!-- Scripts -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="/js/shutter.js"></script>
+    <script src="/js/hamburger.js"></script>
+    <script src="/js/numbers.js"></script>
+
+    <script type="module">
+        import PhotoSwipeLightbox from 'https://cdn.jsdelivr.net/npm/photoswipe@5.4.4/dist/photoswipe-lightbox.esm.min.js';
+
+        const lightbox = new PhotoSwipeLightbox({
+            gallery: '#my-gallery',
+            children: 'a',
+            pswpModule: () => import('https://cdn.jsdelivr.net/npm/photoswipe@5.4.4/dist/photoswipe.esm.min.js')
+        });
+
+        lightbox.init();
+    </script>
+
+    <!-- AOS Library -->
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
+</body>
+</html>

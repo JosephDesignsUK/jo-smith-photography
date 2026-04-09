@@ -1,0 +1,12 @@
+footer{
+    background: var(--dark-green);
+    color: var(--white);
+}
+
+.footer-logo{
+    width: 200px;
+}
+
+.footer-logo img{
+    width: 100%;
+}

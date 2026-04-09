@@ -1,0 +1,34 @@
+.gallery-section{
+    margin-top: 100px;
+    color: var(--dark-green);
+}
+
+.gallery-info{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.work-title{
+    font-family: var(--heading-font) !important;
+    font-size: 5em;
+    margin: 0 0 30px 0;
+    font-weight: 600;
+}
+
+.green-brush{
+    width: 300px;
+    margin-bottom: 20px;
+}
+
+#my-gallery a {
+    display: inline-block;
+    width: 100%;
+}
+
+#my-gallery img {
+    display: block;
+    width: 100%;
+    height: auto;
+}
